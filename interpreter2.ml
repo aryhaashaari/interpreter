@@ -1,20 +1,3 @@
-(* Honor code comes here:
-
-   First Name: Aryha
-   Last Name: Ashaari
-   BU ID: U18092569
-
-   I pledge that this program represents my own program code and that I have
-   coded on my own. I received help from no one in designing and debugging my
-   program. I have read the course syllabus of CS 320 and have read the sections
-   on Collaboration and Academic Misconduct. I also understand that I may be
-   asked to meet the instructor or the TF for a follow up interview on Zoom. I
-   may be asked to explain my solution in person and may also ask you to solve a
-   related problem. *)
-
-(*NOTE: There are no restrictions on what you can use*)
-
-
 (*Writing a line to a file*)
 let write_file_example (file_path: string) : unit =
   let fp = open_out file_path in
@@ -442,14 +425,3 @@ let interpreter (src : string) (output_file_path: string): unit =
         )
           else continue t acc localacc globalacc tempacc templocalacc false false)
   in file_print output_file_path (continue (fin_split src) [] [] [] [] [] true false);;
-
-let example = "Push 10 \nQuit";;
-
-boolcheck "0";;
-boolcheck "7";;
-boolcheck "1";;
-boolcheck "hello";;
-
-name_check "aaaaa7_nfbfeofoefoenfo";;
-
-interpreter example "interpreter2.txt";;
